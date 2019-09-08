@@ -1,0 +1,4 @@
+npm init -y
+npm i -D webpack
+npm i -D webpack-cli
+
