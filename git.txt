@@ -1,0 +1,12 @@
+git --version               查看版本
+git config --list          config配置查看所有配置 
+--global 		全局
+git config --global user.name "huangyali"                    输入用户名
+git config --global user.email "yaliya999@126.com"     输入Email
+git log					   查看历史修改情况
+git config --global alias.st status		   st=status别名
+git config --list --global 			   //自己配置过的
+git config --list --global pull.rebase true		  //配置pull.rebase=true
+cat ~/.gitconfig				   读写取
+local>global>system				   git读取 优先
+
