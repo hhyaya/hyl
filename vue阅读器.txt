@@ -1,0 +1,43 @@
+生成字体图标	https://icomoon.io 
+vue脚手架		https://github.com/vuejs-templates/webpack    	
+字体图标资源和测试电子书下载地址：https://github.com/sam9831/ebook-demo-resource
+
+https://www.cnblogs.com/zkh101/p/8215600.html
+
+https://meyerweb.com/eric/tools/css/reset/index.html
+vue-cli
+npm i vue-cli -g   {vue create xxx} {  vue init webpack my-project}
+vue init webpack-simple [应用名称]
+cd myvue
+npm install
+npm run dev
+@mixin的调用方式是@include，而%的调用方式是@extend；最后@include产生的样式是以复制拷贝的方式存在的，而@extend产生的样式是以组合申明的方式存在的
+
+http://api.asilu.com/#phone
+在线jsonp测试
+
+通过Book对象上的renderTo()方法可以生成一个rendition对象，该对象上的diaplay()方法可以对电子书渲染
+read不是什么监听事件，而是指定的要讲电子书渲染进去的DOM的ID
+第二个参数对象是对电子书渲染的配置，如宽高等
+
+
+知识点：
+1.  :class="{'hideboxshadow':setfont}"                    类名：判断条件
+    :style="{fontSize:fontSizeList[0].fontSize+'px'}"   样式：样式值（可拼接）
+    {{bookAvailable ? progress + '%' : '加载中...'}}      绑定值可用三元值判断 
+    `$(this.progress)% 100%`       拼接字符串
+2 p:first-child() 针对的是p的父级下面的第一个p    若不是则无效
+3 设标志位 一个标志位对应显示一个 点击a时将a对应显示的标志位设为对应值
+4:value="progress" :disabled="!bookAvailable" ref="progress" @input="onProgressInput($event,target,value)" @change="onProgreddChange($event,target,value)" 
+       input中的value   若type为rang 则value为划过的长度
+       :disable="true"  禁用
+       :ref 可绑定改dom的数据，方发，样式  (驼峰命名)https://www.cnblogs.com/xuqp/p/9524342.html
+       @input  （拖动进度条触发） 值发生改变时触发，不需要等到元素失去焦点，是实时的
+       @change  （鼠标释放后触发）在元素的值改变了且失去焦点时触发 https://www.cnblogs.com/wangyongx/p/8024680.html
+5 值来自父组件的变化    --父中定义该值
+   值来自子组件的变化    --子中定义该值（与父组件无关的值）
+   子的值引起父变化       --子中用this.$emit('func',a) 将a值传过去
+   父级用子的方法          --用ref绑   $refs用
+ （与父级有关（父中事件导致flag值变 值决定显隐）就在父级定义否则在自己组件内定义）
+ （值：谁引起该值的变化 就在谁中定义）
+  （方法;子调用父级的方法 ）
